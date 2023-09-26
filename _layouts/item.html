@@ -17,9 +17,13 @@
 {% assign manifests = site.static_files | where_exp: "manifest", "manifest.path contains '/manifests/'"  |where_exp: "manifest", "manifest.extname == '.json'" | where_exp: "manifest", "manifest.path != '/manifests/collection.json' " %}
 
 {% for file in manifests %}
-  <ul>[{{ file.path | replace: "/manifests/", ""}}]({{ file.path | absolute_url }})
-    <li>[View in Mirador](https://projectmirador.org/embed/?iiif-content={{ file.path | absolute_url}})</li>
-    <li>[View in UV](http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest={{ file.path | absolute_url}})</li>
+  <ul>[{{ file.path | replace: "/manifests/", ""}}]({{ file.path | relative_url }})
+    <li>
+      <a href="https://projectmirador.org/embed/?iiif-content={{ file.path | relative_url}}">View in Mirador</a>
+    </li>
+    <li>
+      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest={{ file.path | relative_url}}">View in UV</a>
+    </li>
 </ul>
 {% endfor %}
 
