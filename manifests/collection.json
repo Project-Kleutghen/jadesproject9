@@ -1,0 +1,49 @@
+{
+    "id" : "https://projectkleutghen.github.io/rider-manifests/manifests/collection.json",
+    "label" : {
+      "en" : [ "All manifests loaded in sarahrider/self-manifests project" ]
+    },
+    "type" : "Collection",
+    "@context" : "http://iiif.io/api/presentation/3/context.json",
+    "items" : [ {
+      "@type" : "sc:Manifest",
+      "@id" : "https://projectkleutghen.github.io/jadesproject9/manifests/Jade011Manifest.json",
+      "label" : "Jade011"
+    }, {
+      "@type" : null,
+      "@id" : null,
+      "label" : null
+    }, {
+      "@type" : null,
+      "@id" : null,
+      "label" : null
+    }, {
+      "@type" : null,
+      "@id" : null,
+      "label" : null
+    }, {
+      "@type" : "sc:Manifest",
+      "@id" : "https://projectkleutghen.github.io/jadesproject9/manifests/jade040_sm_manifest_082023.json",
+      "label" : "Jade040"
+    }, {
+      "@type" : "sc:Manifest",
+      "@id" : "https://projectkleutghen.github.io/jadesproject9/manifests/jade041_sm_manifest_082023.json",
+      "label" : "Jade041"
+    }, {
+      "@type" : "sc:Manifest",
+      "@id" : "https://projectkleutghen.github.io/jadesproject9/manifests/Largeroundwhitejadebowl",
+      "label" : "Jade053"
+    }, {
+      "@type" : "sc:Manifest",
+      "@id" : "https://projectkleutghen.github.io/jadesproject9/manifests/disc",
+      "label" : "Jade110"
+    }, {
+      "@type" : "sc:Manifest",
+      "@id" : "https://projectkleutghen.github.io/jadesproject9/manifests/jade107-aic-sm-manifest.json",
+      "label" : "Musical Chime"
+    }, {
+      "@type" : "sc:Manifest",
+      "@id" : "https://projectkleutghen.github.io/jadesproject9/manifests/jade108-bc-sm-manifest.json",
+      "label" : "Pale green jade bowl"
+    } ]
+  }
