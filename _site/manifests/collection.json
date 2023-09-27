@@ -39,11 +39,17 @@
       "label" : "Jade110"
     }, {
       "@type" : "sc:Manifest",
-      "@id" : "https://projectkleutghen.github.io/jadesproject9/manifests/jade107-aic-sm-manifest.json",
+      "@id" : "https://Project-Kleutghen.github.io/jadesproject9/manifests/jade107-aic-sm-manifest.json",
       "label" : "Musical Chime"
     }, {
       "@type" : "sc:Manifest",
-      "@id" : "https://projectkleutghen.github.io/jadesproject9/manifests/jade108-bc-sm-manifest.json",
-      "label" : "Pale green jade bowl"
-    } ]
+      "@id" : "https://Project-Kleutghen.github.io/jadesproject9/manifests/jade108-bc-sm-manifest.json",
+      "label" : "Jade 108 Pale Green jade bowl"
+    ,
+    }, {
+      "@type" : "sc:Manifest",
+      "@id" : "https://github.com/Project-Kleutghen/jadesproject9/blob/593360a8099fa4727fe0f810dfa8c8e1d53e11b0/manifests/jade053-sm-manifest.json",
+      "label" : "Jade 053"
+  }
+  ]
   }
