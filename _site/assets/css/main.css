@@ -195,6 +195,8 @@ header {
   position: absolute;
   background-color: black;
   overflow: hidden;
+  display: initial;
+  margin: 0px;
 }
 
 .fcf-h3, .fcf-form-group {
@@ -254,4 +256,8 @@ header {
   .nav-menu.active {
     left: 0px;
   }
+}
+
+.container {
+  margin: 0px;
 }
