@@ -12,12 +12,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Palace of Heavenly Purity",
+          "Palace Name": "Palace of Heavenly Purity",
           "宮殿名": "乾清宮",
           "Pinyin": "Qianqing Gong",
           "Longtitude": "116.390689",
           "Latitude": "39.91873473",
-          "Object Cou": "13",
+          "Object Count": "13",
           "Image": "../jade001.png",
           "url": "https://project-kleutghen.github.io/jadesproject9/QianQingGong_exhibit.",
           "html": null
@@ -33,12 +33,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Palace of Eternal Longevity",
+          "Palace Name": "Palace of Eternal Longevity",
           "宮殿名": "永壽宮",
           "Pinyin": "Yongshou Gong",
           "Longtitude": "116.3895611",
           "Latitude": "39.91881496",
-          "Object Cou": "3",
+          "Object Count": "3",
           "Image": "1",
           "url": "https://project-kleutghen.github.io/jadesproject9/YoungShouGong_exhibit",
           "html": null
@@ -54,12 +54,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Hall of Mental Cultivation",
+          "Palace Name": "Hall of Mental Cultivation",
           "宮殿名": "養心殿",
           "Pinyin": "Yangxin Dian",
           "Longtitude": "116.3894052",
           "Latitude": "39.91833513",
-          "Object Cou": "6",
+          "Object Count": "6",
           "Image": "../jade054.png",
           "url": null,
           "html": null
@@ -75,12 +75,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Hall of the Supreme Principle",
+          "Palace Name": "Hall of the Supreme Principle",
           "宮殿名": "太極殿",
           "Pinyin": "Taiji Dian",
           "Longtitude": "116.3889121",
           "Latitude": "39.91879747",
-          "Object Cou": "1",
+          "Object Count": "1",
           "Image": "1",
           "url": null,
           "html": null
@@ -96,12 +96,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Palace of Double Brilliance",
+          "Palace Name": "Palace of Double Brilliance",
           "宮殿名": "重華宮",
           "Pinyin": "Chonghua Gong",
           "Longtitude": "116.3892071",
           "Latitude": "39.92034031",
-          "Object Cou": "1",
+          "Object Count": "1",
           "Image": "1",
           "url": null,
           "html": null
@@ -117,12 +117,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Bower of Well-nourished",
+          "Palace Name": "Bower of Well-nourished",
           "宮殿名": "頤和軒",
           "Pinyin": "Yihe Xuan",
           "Longtitude": "116.394027",
           "Latitude": "39.9201994",
-          "Object Cou": "4",
+          "Object Count": "4",
           "Image": "../jade021.png",
           "url": "https://project-kleutghen.github.io/jadesproject9/YiHeXuan_exhibit.html",
           "html": null
@@ -138,12 +138,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Palace of Great Benevolence",
+          "Palace Name": "Palace of Great Benevolence",
           "宮殿名": "景仁宮",
           "Pinyin": "Jingren Gong",
           "Longtitude": "116.3917458",
           "Latitude": "39.91888079",
-          "Object Cou": "1",
+          "Object Count": "1",
           "Image": "1",
           "url": null,
           "html": null
@@ -159,12 +159,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Palace of Accumulated Purity",
+          "Palace Name": "Palace of Accumulated Purity",
           "宮殿名": "鍾粹宮",
           "Pinyin": "Zhongcui Gong",
           "Longtitude": "116.3917176",
           "Latitude": "39.91980032",
-          "Object Cou": "0",
+          "Object Count": "0",
           "Image": "1",
           "url": null,
           "html": null
@@ -180,12 +180,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Hall of Spritual Cultivation",
+          "Palace Name": "Hall of Spritual Cultivation",
           "宮殿名": "養性殿",
           "Pinyin": "Yangxing Dian",
           "Longtitude": "116.3940565",
           "Latitude": "39.91945293",
-          "Object Cou": "2",
+          "Object Count": "2",
           "Image": "1",
           "url": null,
           "html": null
@@ -201,12 +201,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Hall for Viewing Opera",
+          "Palace Name": "Hall for Viewing Opera",
           "宮殿名": "閱是樓",
           "Pinyin": "Yueshi Lou",
           "Longtitude": "116.3945541",
           "Latitude": "39.91951875",
-          "Object Cou": "1",
+          "Object Count": "1",
           "Image": "1",
           "url": null,
           "html": null
@@ -222,12 +222,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Southern Storage Room",
+          "Palace Name": "Southern Storage Room",
           "宮殿名": "南庫",
           "Pinyin": "Nanku",
           "Longtitude": "116.3896644",
           "Latitude": "39.91776684",
-          "Object Cou": "2",
+          "Object Count": "2",
           "Image": "1",
           "url": null,
           "html": null
@@ -243,12 +243,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Palace of Universal Happiness",
+          "Palace Name": "Palace of Universal Happiness",
           "宮殿名": "咸福宮",
           "Pinyin": "Xianfu Gong",
           "Longtitude": "116.3888758",
           "Latitude": "39.91971829",
-          "Object Cou": "1",
+          "Object Count": "1",
           "Image": "1",
           "url": null,
           "html": null
@@ -264,12 +264,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Hall of Fulfillment of Original Wishes",
+          "Palace Name": "Hall of Fulfillment of Original Wishes",
           "宮殿名": "遂初堂",
           "Pinyin": "Suichu Tang",
           "Longtitude": "116.3935885",
           "Latitude": "39.91975146",
-          "Object Cou": "0",
+          "Object Count": "0",
           "Image": "1",
           "url": null,
           "html": null
@@ -285,12 +285,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Pavillion of Raining Flowers",
+          "Palace Name": "Pavillion of Raining Flowers",
           "宮殿名": "雨花閣",
           "Pinyin": "Yuhua Ge",
           "Longtitude": "116.3881959",
           "Latitude": "39.9187913",
-          "Object Cou": "1",
+          "Object Count": "1",
           "Image": "1",
           "url": null,
           "html": null
@@ -306,12 +306,12 @@ var json_Palacecenter_2 =
       {
         "type": "Feature",
         "properties": {
-          "Palace Nam": "Tea Storeroom",
+          "Palace Name": "Tea Storeroom",
           "宮殿名": "茶庫",
           "Pinyin": "Chaku",
           "Longtitude": "116.3929055",
           "Latitude": "39.91923281",
-          "Object Cou": "1",
+          "Object Count": "1",
           "Image": "1",
           "url": null,
           "html": null

@@ -43,23 +43,49 @@
     
     <h1> Item Page for Jade 053 </h1>
 
+<!-- Include Universal Viewer JavaScript file -->
+<script src="assets/js/universalviewer.js"></script>
+
+<!-- By default uses Roboto font. Be sure to load this or change the font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+<div id="my-mirador"/> 
+
+<script type="text/javascript">
+var mirador = Mirador.viewer({
+  "id": "my-mirador",
+  "manifests": {
+    "https://iiif.lib.harvard.edu/manifests/drs:48309543": {
+      "provider": "Harvard University"
+    }
+  },
+  "windows": [
+    {
+      "loadedManifest": "https://iiif.lib.harvard.edu/manifests/drs:48309543",
+      "canvasIndex": 2,
+      "thumbnailNavigationPosition": 'far-bottom'
+    }
+  ]
+});
+</script>
+
 This is a test page for Jade053. This webpage is in the root folder.
 
 
 
 
 <h1>Self-Made Manifests and Viewer Links</h2> 
-
+<!-- 
 
   <ul>
     <li>
       <a href="/jadesproject9/manifests/Jade011Manifest.json" target="_blank">Jade011Manifest.json</a>
     </li>
     <li>
-      <a href="https://projectmirador.org/embed/?iiif-content=%2Fjadesproject9%2Fmanifests%2FJade011Manifest.json" target="_blank">View in Mirador</a>
+      <a href="https://projectmirador.org/embed/?iiif-content=/jadesproject9/manifests/Jade011Manifest.json" target="_blank">View in Mirador</a>
     </li>
     <li>
-      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=%2Fjadesproject9%2Fmanifests%2FJade011Manifest.json" target="_blank">View in UV</a>
+      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=/jadesproject9/manifests/Jade011Manifest.json" target="_blank">View in UV</a>
     </li>
   </ul>
 
@@ -68,10 +94,10 @@ This is a test page for Jade053. This webpage is in the root folder.
       <a href="/jadesproject9/manifests/jade035b_manifest_sm_0723.json" target="_blank">jade035b_manifest_sm_0723.json</a>
     </li>
     <li>
-      <a href="https://projectmirador.org/embed/?iiif-content=%2Fjadesproject9%2Fmanifests%2Fjade035b_manifest_sm_0723.json" target="_blank">View in Mirador</a>
+      <a href="https://projectmirador.org/embed/?iiif-content=/jadesproject9/manifests/jade035b_manifest_sm_0723.json" target="_blank">View in Mirador</a>
     </li>
     <li>
-      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=%2Fjadesproject9%2Fmanifests%2Fjade035b_manifest_sm_0723.json" target="_blank">View in UV</a>
+      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=/jadesproject9/manifests/jade035b_manifest_sm_0723.json" target="_blank">View in UV</a>
     </li>
   </ul>
 
@@ -80,10 +106,10 @@ This is a test page for Jade053. This webpage is in the root folder.
       <a href="/jadesproject9/manifests/jade040_sm_manifest_082023.json" target="_blank">jade040_sm_manifest_082023.json</a>
     </li>
     <li>
-      <a href="https://projectmirador.org/embed/?iiif-content=%2Fjadesproject9%2Fmanifests%2Fjade040_sm_manifest_082023.json" target="_blank">View in Mirador</a>
+      <a href="https://projectmirador.org/embed/?iiif-content=/jadesproject9/manifests/jade040_sm_manifest_082023.json" target="_blank">View in Mirador</a>
     </li>
     <li>
-      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=%2Fjadesproject9%2Fmanifests%2Fjade040_sm_manifest_082023.json" target="_blank">View in UV</a>
+      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=/jadesproject9/manifests/jade040_sm_manifest_082023.json" target="_blank">View in UV</a>
     </li>
   </ul>
 
@@ -92,10 +118,10 @@ This is a test page for Jade053. This webpage is in the root folder.
       <a href="/jadesproject9/manifests/jade041_sm_manifest_082023.json" target="_blank">jade041_sm_manifest_082023.json</a>
     </li>
     <li>
-      <a href="https://projectmirador.org/embed/?iiif-content=%2Fjadesproject9%2Fmanifests%2Fjade041_sm_manifest_082023.json" target="_blank">View in Mirador</a>
+      <a href="https://projectmirador.org/embed/?iiif-content=/jadesproject9/manifests/jade041_sm_manifest_082023.json" target="_blank">View in Mirador</a>
     </li>
     <li>
-      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=%2Fjadesproject9%2Fmanifests%2Fjade041_sm_manifest_082023.json" target="_blank">View in UV</a>
+      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=/jadesproject9/manifests/jade041_sm_manifest_082023.json" target="_blank">View in UV</a>
     </li>
   </ul>
 
@@ -104,10 +130,10 @@ This is a test page for Jade053. This webpage is in the root folder.
       <a href="/jadesproject9/manifests/jade053-sm-manifest.json" target="_blank">jade053-sm-manifest.json</a>
     </li>
     <li>
-      <a href="https://projectmirador.org/embed/?iiif-content=%2Fjadesproject9%2Fmanifests%2Fjade053-sm-manifest.json" target="_blank">View in Mirador</a>
+      <a href="https://projectmirador.org/embed/?iiif-content=/jadesproject9/manifests/jade053-sm-manifest.json" target="_blank">View in Mirador</a>
     </li>
     <li>
-      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=%2Fjadesproject9%2Fmanifests%2Fjade053-sm-manifest.json" target="_blank">View in UV</a>
+      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=/jadesproject9/manifests/jade053-sm-manifest.json" target="_blank">View in UV</a>
     </li>
   </ul>
 
@@ -116,10 +142,10 @@ This is a test page for Jade053. This webpage is in the root folder.
       <a href="/jadesproject9/manifests/jade108-bc-sm-manifest.json" target="_blank">jade108-bc-sm-manifest.json</a>
     </li>
     <li>
-      <a href="https://projectmirador.org/embed/?iiif-content=%2Fjadesproject9%2Fmanifests%2Fjade108-bc-sm-manifest.json" target="_blank">View in Mirador</a>
+      <a href="https://projectmirador.org/embed/?iiif-content=/jadesproject9/manifests/jade108-bc-sm-manifest.json" target="_blank">View in Mirador</a>
     </li>
     <li>
-      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=%2Fjadesproject9%2Fmanifests%2Fjade108-bc-sm-manifest.json" target="_blank">View in UV</a>
+      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=/jadesproject9/manifests/jade108-bc-sm-manifest.json" target="_blank">View in UV</a>
     </li>
   </ul>
 
@@ -128,10 +154,10 @@ This is a test page for Jade053. This webpage is in the root folder.
       <a href="/jadesproject9/manifests/jade110-sm-manifest-cma.json" target="_blank">jade110-sm-manifest-cma.json</a>
     </li>
     <li>
-      <a href="https://projectmirador.org/embed/?iiif-content=%2Fjadesproject9%2Fmanifests%2Fjade110-sm-manifest-cma.json" target="_blank">View in Mirador</a>
+      <a href="https://projectmirador.org/embed/?iiif-content=/jadesproject9/manifests/jade110-sm-manifest-cma.json" target="_blank">View in Mirador</a>
     </li>
     <li>
-      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=%2Fjadesproject9%2Fmanifests%2Fjade110-sm-manifest-cma.json" target="_blank">View in UV</a>
+      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=/jadesproject9/manifests/jade110-sm-manifest-cma.json" target="_blank">View in UV</a>
     </li>
   </ul>
 
@@ -140,13 +166,392 @@ This is a test page for Jade053. This webpage is in the root folder.
       <a href="/jadesproject9/manifests/jade116_manifest_sm_072023.json" target="_blank">jade116_manifest_sm_072023.json</a>
     </li>
     <li>
-      <a href="https://projectmirador.org/embed/?iiif-content=%2Fjadesproject9%2Fmanifests%2Fjade116_manifest_sm_072023.json" target="_blank">View in Mirador</a>
+      <a href="https://projectmirador.org/embed/?iiif-content=/jadesproject9/manifests/jade116_manifest_sm_072023.json" target="_blank">View in Mirador</a>
     </li>
     <li>
-      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=%2Fjadesproject9%2Fmanifests%2Fjade116_manifest_sm_072023.json" target="_blank">View in UV</a>
+      <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest=/jadesproject9/manifests/jade116_manifest_sm_072023.json" target="_blank">View in UV</a>
+    </li>
+  </ul>
+ -->
+
+
+
+
+  <ul>
+    <li>
+      <a href="/jadesproject9/manifests/Jade011Manifest.json" target="_blank">Jade011Manifest.json</a>
+    </li>
+    <li>
+      <!-- Embed Mirador -->
+      <div id="mirador-container-1">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/Jade011Manifest.json";
+            var config = {
+              id: "mirador-container-1",
+              windows: [
+                {
+                  manifestId: manifestUri,
+                  canvasIndex: 0,
+                  viewType: "ImageView",
+                  loadedManifest: manifestUri
+                }
+              ]
+            };
+            Mirador(config);
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/Jade011Manifest.json" target="_blank">View in Mirador</a>
+    </li>
+    <li>
+      <!-- Embed Universal Viewer -->
+      <div id="universal-viewer-container-1">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/Jade011Manifest.json";
+            var configUri = "https://github.com/UniversalViewer/examples/blob/02bfbfabdb8d08d24a38d907d3592b47be9f29d0/template-config.json";
+            var uvDiv = document.getElementById("universal-viewer-container-1");
+            var uv = new UV.Viewer({
+              manifestUri: manifestUri,
+              configUri: configUri
+            });
+            uv.createUI(uvDiv, "fullScreenViewer", {});
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/Jade011Manifest.json" target="_blank">View in UV</a>
     </li>
   </ul>
 
+  <ul>
+    <li>
+      <a href="/jadesproject9/manifests/jade035b_manifest_sm_0723.json" target="_blank">jade035b_manifest_sm_0723.json</a>
+    </li>
+    <li>
+      <!-- Embed Mirador -->
+      <div id="mirador-container-2">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade035b_manifest_sm_0723.json";
+            var config = {
+              id: "mirador-container-2",
+              windows: [
+                {
+                  manifestId: manifestUri,
+                  canvasIndex: 0,
+                  viewType: "ImageView",
+                  loadedManifest: manifestUri
+                }
+              ]
+            };
+            Mirador(config);
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade035b_manifest_sm_0723.json" target="_blank">View in Mirador</a>
+    </li>
+    <li>
+      <!-- Embed Universal Viewer -->
+      <div id="universal-viewer-container-2">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade035b_manifest_sm_0723.json";
+            var configUri = "https://github.com/UniversalViewer/examples/blob/02bfbfabdb8d08d24a38d907d3592b47be9f29d0/template-config.json";
+            var uvDiv = document.getElementById("universal-viewer-container-2");
+            var uv = new UV.Viewer({
+              manifestUri: manifestUri,
+              configUri: configUri
+            });
+            uv.createUI(uvDiv, "fullScreenViewer", {});
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade035b_manifest_sm_0723.json" target="_blank">View in UV</a>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <a href="/jadesproject9/manifests/jade040_sm_manifest_082023.json" target="_blank">jade040_sm_manifest_082023.json</a>
+    </li>
+    <li>
+      <!-- Embed Mirador -->
+      <div id="mirador-container-3">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade040_sm_manifest_082023.json";
+            var config = {
+              id: "mirador-container-3",
+              windows: [
+                {
+                  manifestId: manifestUri,
+                  canvasIndex: 0,
+                  viewType: "ImageView",
+                  loadedManifest: manifestUri
+                }
+              ]
+            };
+            Mirador(config);
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade040_sm_manifest_082023.json" target="_blank">View in Mirador</a>
+    </li>
+    <li>
+      <!-- Embed Universal Viewer -->
+      <div id="universal-viewer-container-3">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade040_sm_manifest_082023.json";
+            var configUri = "https://github.com/UniversalViewer/examples/blob/02bfbfabdb8d08d24a38d907d3592b47be9f29d0/template-config.json";
+            var uvDiv = document.getElementById("universal-viewer-container-3");
+            var uv = new UV.Viewer({
+              manifestUri: manifestUri,
+              configUri: configUri
+            });
+            uv.createUI(uvDiv, "fullScreenViewer", {});
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade040_sm_manifest_082023.json" target="_blank">View in UV</a>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <a href="/jadesproject9/manifests/jade041_sm_manifest_082023.json" target="_blank">jade041_sm_manifest_082023.json</a>
+    </li>
+    <li>
+      <!-- Embed Mirador -->
+      <div id="mirador-container-4">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade041_sm_manifest_082023.json";
+            var config = {
+              id: "mirador-container-4",
+              windows: [
+                {
+                  manifestId: manifestUri,
+                  canvasIndex: 0,
+                  viewType: "ImageView",
+                  loadedManifest: manifestUri
+                }
+              ]
+            };
+            Mirador(config);
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade041_sm_manifest_082023.json" target="_blank">View in Mirador</a>
+    </li>
+    <li>
+      <!-- Embed Universal Viewer -->
+      <div id="universal-viewer-container-4">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade041_sm_manifest_082023.json";
+            var configUri = "https://github.com/UniversalViewer/examples/blob/02bfbfabdb8d08d24a38d907d3592b47be9f29d0/template-config.json";
+            var uvDiv = document.getElementById("universal-viewer-container-4");
+            var uv = new UV.Viewer({
+              manifestUri: manifestUri,
+              configUri: configUri
+            });
+            uv.createUI(uvDiv, "fullScreenViewer", {});
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade041_sm_manifest_082023.json" target="_blank">View in UV</a>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <a href="/jadesproject9/manifests/jade053-sm-manifest.json" target="_blank">jade053-sm-manifest.json</a>
+    </li>
+    <li>
+      <!-- Embed Mirador -->
+      <div id="mirador-container-5">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade053-sm-manifest.json";
+            var config = {
+              id: "mirador-container-5",
+              windows: [
+                {
+                  manifestId: manifestUri,
+                  canvasIndex: 0,
+                  viewType: "ImageView",
+                  loadedManifest: manifestUri
+                }
+              ]
+            };
+            Mirador(config);
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade053-sm-manifest.json" target="_blank">View in Mirador</a>
+    </li>
+    <li>
+      <!-- Embed Universal Viewer -->
+      <div id="universal-viewer-container-5">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade053-sm-manifest.json";
+            var configUri = "https://github.com/UniversalViewer/examples/blob/02bfbfabdb8d08d24a38d907d3592b47be9f29d0/template-config.json";
+            var uvDiv = document.getElementById("universal-viewer-container-5");
+            var uv = new UV.Viewer({
+              manifestUri: manifestUri,
+              configUri: configUri
+            });
+            uv.createUI(uvDiv, "fullScreenViewer", {});
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade053-sm-manifest.json" target="_blank">View in UV</a>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <a href="/jadesproject9/manifests/jade108-bc-sm-manifest.json" target="_blank">jade108-bc-sm-manifest.json</a>
+    </li>
+    <li>
+      <!-- Embed Mirador -->
+      <div id="mirador-container-6">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade108-bc-sm-manifest.json";
+            var config = {
+              id: "mirador-container-6",
+              windows: [
+                {
+                  manifestId: manifestUri,
+                  canvasIndex: 0,
+                  viewType: "ImageView",
+                  loadedManifest: manifestUri
+                }
+              ]
+            };
+            Mirador(config);
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade108-bc-sm-manifest.json" target="_blank">View in Mirador</a>
+    </li>
+    <li>
+      <!-- Embed Universal Viewer -->
+      <div id="universal-viewer-container-6">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade108-bc-sm-manifest.json";
+            var configUri = "https://github.com/UniversalViewer/examples/blob/02bfbfabdb8d08d24a38d907d3592b47be9f29d0/template-config.json";
+            var uvDiv = document.getElementById("universal-viewer-container-6");
+            var uv = new UV.Viewer({
+              manifestUri: manifestUri,
+              configUri: configUri
+            });
+            uv.createUI(uvDiv, "fullScreenViewer", {});
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade108-bc-sm-manifest.json" target="_blank">View in UV</a>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <a href="/jadesproject9/manifests/jade110-sm-manifest-cma.json" target="_blank">jade110-sm-manifest-cma.json</a>
+    </li>
+    <li>
+      <!-- Embed Mirador -->
+      <div id="mirador-container-7">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade110-sm-manifest-cma.json";
+            var config = {
+              id: "mirador-container-7",
+              windows: [
+                {
+                  manifestId: manifestUri,
+                  canvasIndex: 0,
+                  viewType: "ImageView",
+                  loadedManifest: manifestUri
+                }
+              ]
+            };
+            Mirador(config);
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade110-sm-manifest-cma.json" target="_blank">View in Mirador</a>
+    </li>
+    <li>
+      <!-- Embed Universal Viewer -->
+      <div id="universal-viewer-container-7">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade110-sm-manifest-cma.json";
+            var configUri = "https://github.com/UniversalViewer/examples/blob/02bfbfabdb8d08d24a38d907d3592b47be9f29d0/template-config.json";
+            var uvDiv = document.getElementById("universal-viewer-container-7");
+            var uv = new UV.Viewer({
+              manifestUri: manifestUri,
+              configUri: configUri
+            });
+            uv.createUI(uvDiv, "fullScreenViewer", {});
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade110-sm-manifest-cma.json" target="_blank">View in UV</a>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <a href="/jadesproject9/manifests/jade116_manifest_sm_072023.json" target="_blank">jade116_manifest_sm_072023.json</a>
+    </li>
+    <li>
+      <!-- Embed Mirador -->
+      <div id="mirador-container-8">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade116_manifest_sm_072023.json";
+            var config = {
+              id: "mirador-container-8",
+              windows: [
+                {
+                  manifestId: manifestUri,
+                  canvasIndex: 0,
+                  viewType: "ImageView",
+                  loadedManifest: manifestUri
+                }
+              ]
+            };
+            Mirador(config);
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade116_manifest_sm_072023.json" target="_blank">View in Mirador</a>
+    </li>
+    <li>
+      <!-- Embed Universal Viewer -->
+      <div id="universal-viewer-container-8">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "/jadesproject9/manifests/jade116_manifest_sm_072023.json";
+            var configUri = "https://github.com/UniversalViewer/examples/blob/02bfbfabdb8d08d24a38d907d3592b47be9f29d0/template-config.json";
+            var uvDiv = document.getElementById("universal-viewer-container-8");
+            var uv = new UV.Viewer({
+              manifestUri: manifestUri,
+              configUri: configUri
+            });
+            uv.createUI(uvDiv, "fullScreenViewer", {});
+          });
+        </script>
+      </div>
+      <a href="/jadesproject9/manifests/jade116_manifest_sm_072023.json" target="_blank">View in UV</a>
+    </li>
+  </ul>
 
 </body>
 </div>

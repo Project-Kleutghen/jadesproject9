@@ -10,11 +10,37 @@
     
     <h1> Item Page for {{ page.title }} </h1>
 
+<!-- Include Universal Viewer JavaScript file -->
+<script src="assets/js/universalviewer.js"></script>
+
+<!-- By default uses Roboto font. Be sure to load this or change the font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<!-- Container element of Mirador whose id should be passed to the instantiating call as "id" -->
+<div id="my-mirador"/> 
+
+<script type="text/javascript">
+var mirador = Mirador.viewer({
+  "id": "my-mirador",
+  "manifests": {
+    "https://iiif.lib.harvard.edu/manifests/drs:48309543": {
+      "provider": "Harvard University"
+    }
+  },
+  "windows": [
+    {
+      "loadedManifest": "https://iiif.lib.harvard.edu/manifests/drs:48309543",
+      "canvasIndex": 2,
+      "thumbnailNavigationPosition": 'far-bottom'
+    }
+  ]
+});
+</script>
+
 {{ content }}
 
 
 <h1>Self-Made Manifests and Viewer Links</h2> 
-{% assign manifests = site.static_files | where_exp: "manifest", "manifest.path contains '/manifests/'"  |where_exp: "manifest", "manifest.extname == '.json'" | where_exp: "manifest", "manifest.path != '/manifests/collection.json' " %}
+<!-- {% assign manifests = site.static_files | where_exp: "manifest", "manifest.path contains '/manifests/'"  |where_exp: "manifest", "manifest.extname == '.json'" | where_exp: "manifest", "manifest.path != '/manifests/collection.json' " %}
 {% for file in manifests %}
   <ul>
     <li>
@@ -27,8 +53,58 @@
       <a href="http://universalviewer.io/examples/#?c=&m=&s=&cv=&manifest={{ file.path | relative_url }}" target="_blank">View in UV</a>
     </li>
   </ul>
-{% endfor %}
+{% endfor %} -->
 
+{% assign manifests = site.static_files | where_exp: "manifest", "manifest.path contains '/manifests/'"  | where_exp: "manifest", "manifest.extname == '.json'" | where_exp: "manifest", "manifest.path != '/manifests/collection.json' " %}
+
+{% for file in manifests %}
+  <ul>
+    <li>
+      <a href="{{ file.path | relative_url }}" target="_blank">{{ file.path | replace: "/manifests/", "" }}</a>
+    </li>
+    <li>
+      <!-- Embed Mirador -->
+      <div id="mirador-container-{{ forloop.index }}">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "{{ file.path | relative_url }}";
+            var config = {
+              id: "mirador-container-{{ forloop.index }}",
+              windows: [
+                {
+                  manifestId: manifestUri,
+                  canvasIndex: 0,
+                  viewType: "ImageView",
+                  loadedManifest: manifestUri
+                }
+              ]
+            };
+            Mirador(config);
+          });
+        </script>
+      </div>
+      <a href="{{ file.path | relative_url }}" target="_blank">View in Mirador</a>
+    </li>
+    <li>
+      <!-- Embed Universal Viewer -->
+      <div id="universal-viewer-container-{{ forloop.index }}">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var manifestUri = "{{ file.path | relative_url }}";
+            var configUri = "https://github.com/UniversalViewer/examples/blob/02bfbfabdb8d08d24a38d907d3592b47be9f29d0/template-config.json";
+            var uvDiv = document.getElementById("universal-viewer-container-{{ forloop.index }}");
+            var uv = new UV.Viewer({
+              manifestUri: manifestUri,
+              configUri: configUri
+            });
+            uv.createUI(uvDiv, "fullScreenViewer", {});
+          });
+        </script>
+      </div>
+      <a href="{{ file.path | relative_url }}" target="_blank">View in UV</a>
+    </li>
+  </ul>
+{% endfor %}
 </body>
 </div>
 
